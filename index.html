@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Explorador de contenido aleatorio</title>
+ <link rel="stylesheet" href="estilos.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <header><p class="etiqueta">PROGRAMACIÓN WEB III · CONEXIÓN API</p>
+ <h1>Explorador de contenido aleatorio</h1>
+ <p>Una cita, dos nuevos amigos y algo que no sabías. Explora con cada clic.</p></header>
+ <main><section class="tarjeta" id="cita" aria-labelledby="titulo-cita">
+ <div class="encabezado"><span class="fuente">DummyJSON</span><h2 id="titulo-cita">Citas y autores</h2></div>
+ <div class="contenido"><blockquote id="textoCita" lang="en"></blockquote><p id="autorCita" class="autor"></p></div>
+ <p id="estado-cita" class="estado" role="status" aria-live="polite"></p>
+ <button id="boton-cita" type="button">Obtener otra cita</button>
+</section>
+<section class="tarjeta" id="perro" aria-labelledby="titulo-perro">
+ <div class="encabezado"><span class="fuente">Dog CEO</span><h2 id="titulo-perro">Imágenes de perros</h2></div>
+ <div class="contenido"><img id="imagenPerro" alt="Perro aleatorio obtenido de Dog CEO" hidden></div>
+ <p id="estado-perro" class="estado" role="status" aria-live="polite"></p>
+ <button id="boton-perro" type="button">Mostrar otro perro</button>
+</section>
+<section class="tarjeta" id="gato" aria-labelledby="titulo-gato">
+ <div class="encabezado"><span class="fuente">CATAAS</span><h2 id="titulo-gato">Imágenes de gatos</h2></div>
+ <div class="contenido"><img id="imagenGato" alt="Gato aleatorio obtenido de CATAAS" hidden></div>
+ <p id="estado-gato" class="estado" role="status" aria-live="polite"></p>
+ <button id="boton-gato" type="button">Mostrar otro gato</button>
+</section>
+<section class="tarjeta" id="dato" aria-labelledby="titulo-dato">
+ <div class="encabezado"><span class="fuente">Useless Facts</span><h2 id="titulo-dato">Datos curiosos</h2></div>
+ <div class="contenido"><p id="textoDato" class="dato" lang="en"></p></div>
+ <p id="estado-dato" class="estado" role="status" aria-live="polite"></p>
+ <button id="boton-dato" type="button">Mostrar otro dato</button>
+</section>
+</main>
+ <footer>Cuatro APIs públicas · Cada botón actualiza solamente su sección.</footer>
+</body>
+</html>
